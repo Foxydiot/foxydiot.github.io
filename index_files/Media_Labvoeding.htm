@@ -478,12 +478,20 @@ left:8px;top:8px;width:321px;height:27px'>
   <td width=321 height=27 style='vertical-align:top'><![endif]>
   <div v:shape="_x0000_s1078" style='padding:2.85pt 2.85pt 2.85pt 2.85pt'
   class=shape>
-  <p class=MsoTagline><span style='font-size:7.5pt;line-height:100%;font-family:
-  Georgia;language:EN'>Are you made of gold, titanium, carbon and sulphur?</span></p>
+  <p class=MsoTagline id="factDisplay" style="height: 25px"><span style='font-size:7.5pt;line-height:100%;font-family:
+  Georgia;language:EN'></span></p>
   </div>
   <![if !vml]></td>
  </tr>
 </table>
+
+<script>
+(function newFact() {
+  var facts = ['Elfbar, elfbar, mir ist nicht mehr helfbar', 'Are you made of gold, titanium, sulphur and carbon?', 'Are you an organonickel compound with the formula NiC12H18?', 'A key that opens many locks is a master key, a lock opened by many keys is a Master™lock'];
+  var randomFact = Math.floor(Math.random() * facts.length);
+  document.getElementById('factDisplay').innerHTML = facts[randomFact];
+})();
+</script>
 
 </span><![endif]><!--[if gte vml 1]><v:rect id="_x0000_s1233" style='position:absolute;
  left:153pt;top:102.75pt;width:351pt;height:263.25pt;z-index:106;
